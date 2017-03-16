@@ -1,0 +1,13 @@
+$log PINB
+$log PORTB
+$startlog 90rps_log3.stim
+
+$repeat 10
+	PINB = 0x00
+	#8333
+	PINB = 0x02
+	#8333
+$endrep
+
+$break
+
